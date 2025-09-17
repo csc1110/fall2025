@@ -5,11 +5,14 @@ import java.util.Scanner;
 public class Lec2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int sum = 0;
-        while (in.hasNextInt()) {
-            int value = in.nextInt();
-            sum += value;
-        }
-        System.out.println(sum);
+        int evenCount = 0;
+        int value;
+        do {
+            value = in.nextInt();
+            if (value > 0 && value % 2 == 0) {
+                evenCount++;
+            }
+        } while (value > 0);
+        System.out.println("You entered " + evenCount + " even integers");
     }
 }
