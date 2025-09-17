@@ -22,6 +22,7 @@ public class Driver {
         System.out.println("Do you want to know a secret? (yes or no)");
         String answer = in.next();
         if (answer.equalsIgnoreCase("yes")) {
+            int niceMode = 3;
             System.out.println("The secret is: " + secret);
         } else {
             if (jerkMode) {
