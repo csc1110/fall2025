@@ -5,14 +5,15 @@ import java.util.Scanner;
 public class Lec2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int evenCount = 0;
-        int value;
+        System.out.println("Enter numbers followed by 'q' to quit.");
+        int sum = 0;
+        String input;
         do {
-            value = in.nextInt();
-            if (value > 0 && value % 2 == 0) {
-                evenCount++;
+            input = in.next();
+            if (!input.equals("q")) {
+                sum += Integer.parseInt(input);
             }
-        } while (value > 0);
-        System.out.println("You entered " + evenCount + " even integers");
+        } while (!input.equals("q"));
+        System.out.println(sum);
     }
 }
