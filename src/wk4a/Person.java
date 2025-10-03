@@ -5,6 +5,19 @@ public class Person {
     String lastname = "Edwards";
 
     void setFirstname(String name) {
-        firstname = name;
+        this.firstname = name;
+    }
+
+    void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    Person() {
+
+    }
+
+    Person(String firstname, String lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
     }
 }
