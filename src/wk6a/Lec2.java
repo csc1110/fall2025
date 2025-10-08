@@ -1,6 +1,6 @@
 package wk6a;
 
-public class Lec3 {
+public class Lec2 {
     public static void main(String[] args) {
         Fraction.toggleDisplayMethod();
         Fraction f = new Fraction(3);
