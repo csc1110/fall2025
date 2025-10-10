@@ -1,9 +1,25 @@
 package wk6a;
 
+// +----------------------------------------------+
+// |              Fraction                        |
+// +----------------------------------------------+
+// | - num: int {readOnly}                        |
+// | - den: int {readOnly}                        |
+// | - displayAsDouble: boolean {underline}       |
+// +----------------------------------------------+
+// | + Fraction(numerator: int, denominator: int) |
+// | + Fraction(numerator: int)                   |
+// | + times(multiplicand: Fraction) : Fraction   |
+// | + plus(addend: int) : Fraction               |
+// | + plus(addend: Fraction) : Fraction          |
+// +----------------------------------------------+
+
 public class Fraction {
     private final int num;
     private final int den;
     private static boolean displayAsDouble = false;
+    // Class constant
+    public final static double PI = 3.14159265358979;
 
     /**
      * Constructs a fraction object
@@ -39,6 +55,15 @@ public class Fraction {
         int numer = this.num * multiplicand.num;
         int denom = this.den * multiplicand.den;
         return new Fraction(numer, denom);
+    }
+
+    public Fraction plus(int addend) {
+        return new Fraction(num + addend * den, den);
+    }
+
+    public Fraction plus(Fraction addend) {
+        return new Fraction(num * addend.den + addend.num * den,
+                den * addend.den);
     }
 
     public static void toggleDisplayMethod() {
