@@ -18,7 +18,8 @@ public class Die {
     }
 
     public int roll() {
-        currentValue = (int)(Math.random() * 6) + 1;
+        System.out.println("rolled");
+        currentValue = (int)(Math.random() * numSides) + 1;
         return currentValue;
     }
 }

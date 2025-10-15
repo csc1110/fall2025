@@ -26,6 +26,10 @@ public class Student {
         return ask;
     }
 
+    public boolean equals(Student that) {
+        return this.talkative == that.talkative && this.d100.getCurrentValue() == that.d100.getCurrentValue();
+    }
+
     public boolean provideCorrectAnswer() {
         boolean correct = d100.roll() <= DEFAULT_CORRECT;
         if (fireAlarmPulled) {

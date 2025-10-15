@@ -12,9 +12,14 @@ package wk6a;
 // | + times(multiplicand: Fraction) : Fraction   |
 // | + plus(addend: int) : Fraction               |
 // | + plus(addend: Fraction) : Fraction          |
+// | + minus(val: Fraction) : Fraction            |
 // +----------------------------------------------+
 
 public class Fraction {
+    public Fraction minus(Fraction val) {
+        return new Fraction(this.num * val.den - val.num * this.den, this.den * val.den);
+    }
+
     private final int num;
     private final int den;
     private static boolean displayAsDouble = false;

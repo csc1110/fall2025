@@ -12,6 +12,10 @@ public class Student {
         talkative = d100.roll() <= 30;
     }
 
+    /**
+     * Returns true if the student asks a question
+     * @return true if the student asks a question
+     */
     public boolean askQuestion() {
         boolean ask = d100.roll() <= 5;
         if (talkative) {
