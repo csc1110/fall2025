@@ -11,6 +11,16 @@ public class Teacher {
         this.numStudents = numStudents;
     }
 
+    public int getNumStudents() {
+        return numStudents;
+    }
+
+    public void setNumStudents(int numStudents) {
+        if (numStudents > 0) {
+            this.numStudents = numStudents;
+        }
+    }
+
     public int selectStudent() {
         int studentId = 0;
         do {

@@ -5,10 +5,20 @@ import us.msoe.csc1110.Die;
 public class Teacher {
     private static Die d6 = new Die();
     private static Die d10 = new Die(10);
-    private final int numStudents;
+    private int numStudents;
 
     public Teacher(int numStudents) {
         this.numStudents = numStudents;
+    }
+
+    public int getNumStudents() {
+        return numStudents;
+    }
+
+    public void setNumStudents(int numStudents) {
+        if (numStudents > 0) {
+            this.numStudents = numStudents;
+        }
     }
 
     public int selectStudent() {
