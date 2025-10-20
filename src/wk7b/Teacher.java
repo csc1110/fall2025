@@ -33,4 +33,10 @@ public class Teacher {
         final int correct_decile = 8;
         return d10.roll() <= correct_decile;
     }
+
+    public void swap(Teacher that) {
+       int temp = this.numStudents;
+       this.numStudents = that.numStudents;
+       that.numStudents = temp;
+    }
 }

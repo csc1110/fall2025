@@ -13,10 +13,14 @@ public class Section {
     public static final int TOTAL_QUESTIONS_PER_SESSION = 50;
 
     public Section() {
+        createStudents();
+        teacher = new Teacher(3);
+    }
+
+    private void createStudents() {
         student1 = new Student();
         student2 = new Student();
         student3 = new Student();
-        teacher = new Teacher(3);
     }
 
     public void conductSession() {

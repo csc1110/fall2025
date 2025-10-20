@@ -13,6 +13,11 @@ public class Die {
         this.numSides = numSides;
     }
 
+    // d6.equals(d10);
+    public boolean equals(Die that) {
+        return this.numSides == that.numSides && this.currentValue == that.currentValue;
+    }
+
     public int getCurrentValue() {
         return currentValue;
     }
