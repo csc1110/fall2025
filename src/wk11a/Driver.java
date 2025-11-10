@@ -10,7 +10,7 @@ public class Driver {
         System.out.println(Drawable.bad);
         StringBuilder stuff = new StringBuilder();
         for (int i = 0; i < 5; i++) {
-            stuffToDraw.add(Math.random()<0.5 ? new Person() : new Parrot());
+            stuffToDraw.add(Math.random() < 0.5 ? new Person() : new Parrot());
             stuff.append("1");
         }
         for (Drawable drawMe : stuffToDraw) {
