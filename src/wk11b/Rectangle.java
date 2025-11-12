@@ -1,7 +1,7 @@
 package wk11b;
 
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
     private double length;
     private double width;
 
@@ -17,6 +17,11 @@ public class Rectangle extends Shape {
         super(x, y, color);
         this.length = length;
         this.width = width;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("I'm a rectangle");
     }
 
     public double getArea() {

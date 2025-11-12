@@ -9,7 +9,6 @@ public class Lec1 {
         shapes.add(new Shape());
         shapes.add(new Rectangle(2, 2, "yellow"));
         shapes.add(new Rectangle(2, 2, "yellow", 5, 10));
-        Rectangle x = (Rectangle) shapes.getFirst();
         for (Shape shape : shapes) {
             System.out.println(shape.toString());
         }

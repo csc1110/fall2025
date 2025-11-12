@@ -23,4 +23,12 @@ public class Shape {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public void draw() {
+        System.out.println("I'm a shape");
+    }
+
+    public String dumbest() {
+        return "";
+    }
 }
