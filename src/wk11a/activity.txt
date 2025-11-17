@@ -1,0 +1,43 @@
++--------------------------+
+|     ElectronicDevices    |
++--------------------------+
+| - isOn : boolean         |
+| - isPlaying : boolean    |
+| - isPaused : boolean     |
++--------------------------+
+| + ElectronicDevices()    |
+| + isOn() : boolean       |
+| + turnOn() : void        |
+| + turnOff() : void       |
+| + play() : boolean       |
+| + pause() : boolean      |
+| + stop() : boolean       |
++--------------------------+
+
+## Laptop
+- open/close Lid
+- login / logout
+- take photo
+
+## Phone
+- lock / unlock
+- take photo
+- makeCall
+- hangUp
+
+## Tablet
+- lock / unlock
+- take photo
+
+## SmartWatch
+- lock / unlock
+- displayHeartRate
+
+## TV
+- isHDMIConnected
+- channelUp
+- channelDown
+- setChannel
+
+
+
